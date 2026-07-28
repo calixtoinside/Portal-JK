@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal JK - O seu jornal de notícias</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;700&family=Libre+Baskerville:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho compacto em azul #007bff */
+        header {
+            background-color: #007bff;
+            padding: 8px 0; /* Mais fino para ocupar menos espaço */
+            text-align: center;
+        }
+
+        /* Logo em cor #FFFFFF */
+        .logo {
+            font-family: 'DM Serif Display', serif;
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 1.75rem;
+            text-decoration: none;
+            display: block;
+            line-height: 1.1;
+        }
+
+        /* Slogan abaixo da logo usando a mesma fonte DM Serif Display */
+        .slogan {
+            font-family: 'DM Serif Display', serif;
+            color: #FFFFFF;
+            font-size: 0.95rem;
+            font-weight: 400;
+            margin-top: 2px;
+            font-style: normal; /* Fonte normal, sem itálico */
+        }
+
+        /* Container Principal da Capa */
+        main {
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        /* Estilo do Card de Notícia */
+        .card-noticia {
+            margin-bottom: 30px;
+        }
+
+        /* Link que envolve a foto e o título */
+        .link-materia {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        /* Imagem da capa limpa (sem bordas/traçados) */
+        .imagem-card {
+            width: 100%;
+            height: auto;
+            border-radius: 0; /* Bordas retas */
+            border: none;     /* Sem traçados ou bordas */
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* Manchete na capa */
+        .manchete-card {
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.2;
+            color: #111;
+            margin-bottom: 8px;
+            transition: color 0.2s ease;
+        }
+
+        /* Efeito de destaque ao passar o mouse/toque */
+        .link-materia:hover .manchete-card {
+            color: #007bff;
+        }
+
+        /* Data de publicação (sem horário) */
+        .data-publicacao {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Linha divisória entre as notícias */
+        .linha-divisoria {
+            border: 0;
+            border-bottom: 1px solid #E0E0E0;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Portal JK</a>
+        <p class="slogan">uma notícia mais idiota que a outra</p>
+    </header>
+
+    <main>
+
+        <article class="card-noticia">
+            <a href="volta-as-aulas.html" class="link-materia">
+                
+                <img class="imagem-card" src="aulascapa.jpg" alt="Inserir imagem">
+                
+                <h2 class="manchete-card">Para a volta às aulas, especialistas aconselham levar cadernos, canetas e antidepressivos</h2>
+            </a>
+
+            <p class="data-publicacao">03/08/2026</p>
+
+            <hr class="linha-divisoria">
+        </article>
+          <article class="card-noticia">
+            <a href="banheiro.html" class="link-materia">
+                
+                <img class="imagem-card" src="banheirocapa.jpg" alt="Inserir imagem">
+                
+                <h2 class="manchete-card">Banheiro masculino ganha "chafariz" e alunos são obrigados a fazerem fila para escovar os dentes</h2>
+            </a>
+
+            <p class="data-publicacao">03/08/2026</p>
+
+            <hr class="linha-divisoria">
+        </article>
+        </main>
+
+</body>
+</html>
